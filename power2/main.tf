@@ -23,10 +23,11 @@ resource "null_resource" "test2" {
 
 resource "null_resource" "test3" {
   provisioner "local-exec" {
-    command = "echo 'Hello, Terraform!'"
+    command = "echo 'Hello, Terraformddd!'"
   }
 }
-resource "null_resource" "test4" {
+
+resource "null_resource" "test5" {
   provisioner "local-exec" {
     command = "echo 'Hello, Terraform!'"
   }
