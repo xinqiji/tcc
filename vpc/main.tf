@@ -15,15 +15,19 @@ resource "null_resource" "test" {
   }
 }
 
-# 定义第二个 null_resource
 resource "null_resource" "test_2" {
   provisioner "local-exec" {
     command = "echo 'Hello from the second null_resource!'"
   }
-
-  # 依赖于第一个 null_resource
-  depends_on = [null_resource.test_1]
 }
+resource "null_resource" "test_3" {
+  provisioner "local-exec" {
+    command = "echo 'Hello from the second null_resource!'"
+  }
+}
+
+
+
 # 输出 null_resource 的 ID
 output "null_resource_id" {
   value = null_resource.test.id
