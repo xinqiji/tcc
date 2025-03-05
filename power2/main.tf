@@ -21,11 +21,7 @@ resource "null_resource" "test2" {
   }
 }
 
-resource "null_resource" "test3" {
-  provisioner "local-exec" {
-    command = "echo 'Hello, Terraform!'"
-  }
-}
+
 
 # 输出 null_resource 的 ID
 output "null_resource_id" {
