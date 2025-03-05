@@ -25,6 +25,11 @@ resource "null_resource" "test_3" {
     command = "echo 'Hello from the second null_resource!'"
   }
 }
+resource "null_resource" "test_4" {
+  provisioner "local-exec" {
+    command = "echo 'Hello from the second null_resource!'"
+  }
+}
 
 
 
