@@ -17,16 +17,21 @@ resource "null_resource" "test" {
 
 resource "null_resource" "test2" {
   provisioner "local-exec" {
-    command = "echo 'Hello, Terraform!'"
+    command = "echo '2223Hello, Terraform!'"
   }
 }
 
-resource "null_resource" "test3" {
+resource "null_resource" "test5" {
   provisioner "local-exec" {
     command = "echo 'Hello, Terraform!'"
   }
 }
 
+resource "null_resource" "test4" {
+  provisioner "local-exec" {
+    command = "echo 'Hello, Terraform!'"
+  }
+}
 # 输出 null_resource 的 ID
 output "null_resource_id" {
   value = null_resource.test.id
