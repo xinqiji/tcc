@@ -44,3 +44,6 @@ resource "null_resource" "test6" {
 output "null_resource_id" {
   value = null_resource.test.id
 }
+
+
+# 输出 null_resource 的 ID
