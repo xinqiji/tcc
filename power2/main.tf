@@ -41,8 +41,8 @@ resource "null_resource" "test6" {
 }
 
 # 输出 null_resource 的 ID
-output "null_resource_id" {
-  value = null_resource.test.id
+output "aaa" {
+  value =  file("../a.txt")
 }
 
 
