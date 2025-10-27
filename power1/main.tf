@@ -27,6 +27,13 @@ resource "null_resource" "test5" {
   }
 }
 
+resource "null_resource" "test544" {
+  provisioner "local-exec" {
+    command = "echo 'Hello, Terraform!'"
+  }
+}
+
+
 resource "null_resource" "test11" {
   provisioner "local-exec" {
     command = "echo 'Hello, Terraform!'"
